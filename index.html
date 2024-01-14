@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- google fontes -->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--fim do link bootstrap-->
+    
+    <title>Agencia CM</title>
+</head>
+<body>
+    
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Caroline Dias.png" alt="Logo da agencia CM" >
+                </a>
+            </div> <!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quem sou eu</a></li>
+                    <li><a href="#">Projetos e Especialidades</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+
+                    <button> Contato </button>
+                    
+                </a>
+                
+            </div>
+
+        </div> <!--interface-->
+    </header>
+
+<!-- /* PARTE DE ESTILIZAÇÃO DO TOPO DO TEXTO -  */-->
+
+    <main>
+        <section class="topo-do-site">
+
+            <div class="interface">
+
+                <div class="flex">
+
+                         <div class="txt-topo-site">
+                             <h1>Com as minhas <span>habilidades</span> e <span>experiências profissionais</span>,
+                                 executarei grandes projetos para a sua empresa. 
+                                 Possuo alto nível de adaptação, acompanhando as transformações do mercado<span>.</span></h1>
+                                <P>
+                                    Analista de Sistemas pela INSTED -  2024 
+                                </P>
+                             <div class="btn-contato">
+                                 <a href="#">
+                                     <button>Entre em contato</button>
+                                 </a>
+                             </div><!--btn contato acaba aqui-->
+
+                        </div><!-- txt-topo do site -->
+                        
+                                <div class="img-topo">
+                                    <img src="images/caca.png" alt="">
+                                </div><!--img topo-->         
+
+                </div><!-- flex-->
+
+            </div><!-- topo da interface-->
+
+        </section><!-- topo do site-->
+
+<!-- parte da especialização-->
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <SPAN>ESPECIALIDADES</SPAN>.</h2>
+                <div class="flex">
+
+                    <DIV class="especialidades">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>WEB SITE</h3>
+                        <P>LORENIPSUM  LORENIPSUM  LORENIPSUM  LORENIPSUM</P>
+                    </DIV><!--fim de especialidades-->
+                     
+                    <DIV class="especialidades">
+                        <i class="bi bi-database"></i>
+                        <h3>BANCOS DE DADOS</h3>
+                        <P>LORENIPSUM  LORENIPSUM  LORENIPSUM  LORENIPSUM</P>
+                    </DIV><!--fim de especialidades-->
+                    <DIV class="especialidades">
+                        <i class="bi bi-file-earmark-code"></i>
+                        <h3>BLOG</h3>
+                        <P>LORENIPSUM  LORENIPSUM  LORENIPSUM  LORENIPSUM</P>
+                    </DIV><!--fim de especialidades-->
+    
+                </div><!--fim da div flex-->
+            </div><!--fim da div interface-->
+        </section>
+
+        <section class="sobre">
+            <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img src="images/kaka.png" alt="">
+                </div><!--img sobre final-->
+
+                <div class="txt-sobre">
+                  <h2>MUITO PRAZER, <SPAn>SOU A CAROLINE MALDONADO.</SPAn></h2>
+                  <p>Possuo meu Ensino Médio concluído desde 2018, com curso técnico de Técnico de Informática pelo Instituto Federal, onde durante o curso fiz parte da equipe de robótica, contribui para a hardware onde eu montava os robôs e ganhamos um prêmio por melhor robustez. Atualmente curso 
+                    Análise de Sistemas pela Insted e pretendo atuar na área de coordenação de projetos. 
+                 
+                    <div class="btn-social">
+                       <a href="#"><button><i class="bi bi-github"></i></button></a>
+                       <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                       <a href="#"><button><i class="bi bi-linkedin"></i></button></a> 
+
+                    </div>
+                  </p>
+                </div><!--final sobre-->
+                 
+            </div><!--final flex-->
+            </div><!--interface fim-->
+
+        </section><!--sobre-->
+
+        
+
+        <form id="email-txt">
+            <h2 class="titulo">FALA <SPAN>COMIGO</SPAN></h2>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="text" placeholder=" Seu nome completo" required>
+            <input type="text" placeholder=" Seu celular">
+            <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+           
+            <button type="button" onclick="enviarEmail()">Enviar Email</button>
+          </form>
+        
+          <script>
+            function enviarEmail() {
+              
+              var email = document.getElementById("email").value;
+        
+              
+              if (email.trim() !== "") {
+               
+                alert("Email enviado para: " + email);
+              } else {
+                
+                alert("Por favor, insira um endereço de email válido.");
+              }
+            }
+          </script>
+    </main>
+  
+</body>
+</html>
